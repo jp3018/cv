@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Contact Me</title>
+    <meta charset="utf-8">
+    <title>Experimenting with Forms</title>
 </head>
+
 <body>
-  <h3>Contact Information</h3>
-  <ul>
-  	<li>Phone no: 6281696936</li>
-  	<li>Email :jpreddythokala@gmail.com</li>
-  	<li>LinkedIn: <a href="https://www.linkedin.com/in/jayaprakash-reddy-6a0a86195/"><em>Jaya Prakash Reddy</em></a></li>
-  </ul>
+    <form action="mailto:jpreddythokala@gmail.com" method="post" enctype="text/plain">
+        <div>
+            <label for="name">Your Name :</label>
+            <input type="text" name="Name" id="name" placeholder="name" value="">
+        </div>
+        <br>
+        <div>
+            <label for="name">Your Email :</label>
+            <input type="email" name="email" id="email" placeholder="email" value="">
+        </div>
+        <br>
+        <div>
+            <p>Gender :</p>
+            <input type="radio" name="gender" value="male" id="male" value="">
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="female" value="female" value="">
+            <label for="female">female</label>
+        </div>
+        <br>
+        <div>
+        	<label for="DOB">Date of Birth :</label>
+        	<input type="Date" name="DOB" id="DOB" value="">
+        </div>
+        <br>
+        <div>
+        	<label for="phone no">phone no :</label>
+        	<input type="number" name="phone no" id="phone no" placeholder="9876543210" value="">
+        </div>
+        <br>
+        <div>
+        	<label for="message">Message :</label><br>
+        	<textarea id="message" rows="10" cols="30" name="message" value=""></textarea>
+        </div>
+        <div>
+        	<input type="reset" name="reset">
+        	<input type="submit">
+        </div>
+    </form>
 </body>
+
 </html>
